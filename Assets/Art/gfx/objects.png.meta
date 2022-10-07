@@ -1821,10 +1821,10 @@ TextureImporter:
       name: objects_81
       rect:
         serializedVersion: 2
-        x: 73
-        y: 201
-        width: 12
-        height: 13
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3056,6 +3056,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: objects_140
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8879a6bbe0009b746968bc3ed41a4118
+      internalID: 1288467605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_141
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cdd2dba8f73864faac98d28b71647c
+      internalID: -776079992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_142
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b859839ba206b048a544b677e7cbacf
+      internalID: 1066162355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_143
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afb8e9444809ef4287f02463d8b5087
+      internalID: -874396622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3067,6 +3151,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      objects_4: 868442172
       objects_118: -1043083624
       objects_98: 2101598005
       objects_84: 1091473658
@@ -3075,6 +3160,7 @@ TextureImporter:
       objects_78: 500970626
       objects_113: -614984504
       objects_122: -1203741381
+      objects_141: -776079992
       objects_134: 2143318764
       objects_83: -652575890
       objects_116: -641508826
@@ -3082,12 +3168,12 @@ TextureImporter:
       objects_41: 591891184
       objects_89: 959921123
       objects_109: -1330465533
-      objects_20: 729667413
       objects_3: 1201096948
       objects_119: -1582260815
       objects_18: 1371547124
       objects_2: -2052219923
       objects_58: 1917821879
+      objects_143: -874396622
       objects_57: -1420418989
       objects_117: -1652592298
       objects_43: 759837617
@@ -3117,6 +3203,7 @@ TextureImporter:
       objects_93: 258807813
       objects_94: 560446290
       objects_50: 762541664
+      objects_140: 1288467605
       objects_79: 1903778545
       objects_102: -1464045936
       objects_91: 1095592497
@@ -3130,9 +3217,9 @@ TextureImporter:
       objects_131: 310002269
       objects_87: 986666312
       objects_104: -939001439
-      objects_107: 2099934638
       objects_7: -96931438
       objects_80: 1681079758
+      objects_107: 2099934638
       objects_22: 147648634
       objects_47: 899236772
       objects_42: -1826348466
@@ -3202,11 +3289,12 @@ TextureImporter:
       objects_68: -1913340412
       objects_130: 1624872703
       objects_111: 2056419335
+      objects_142: 1066162355
       objects_61: 985871194
       objects_88: -1674729254
-      objects_4: 868442172
       objects_127: 637836286
       objects_128: -555797258
+      objects_20: 729667413
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
