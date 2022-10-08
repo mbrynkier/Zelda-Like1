@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
-{
+{    
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
@@ -20,24 +20,22 @@ public class Sign : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && playerInRange){
             if(dialogBox.activeInHierarchy){
-                dialogBox.SetActive(false);
+                dialogBox.SetActive(false);                
             }else{
                 dialogBox.SetActive(true);
-                dialogText.text = dialog;
+                dialogText.text = dialog;                
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other){
-        if(other.CompareTag("Player")){
-            Debug.Log("Player in range");
+        if(other.CompareTag("Player")){            
             playerInRange = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other){
-        if(other.CompareTag("Player")){
-            Debug.Log("Player out of range");
+        if(other.CompareTag("Player")){            
             playerInRange = false;
             dialogBox.SetActive(false);
         }

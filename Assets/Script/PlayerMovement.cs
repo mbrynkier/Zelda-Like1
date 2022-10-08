@@ -14,13 +14,18 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
+    public bool interactiveInRange;
 
     // Start is called before the first frame update
     void Start()
     {
         currentState = PlayerState.walk;
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();        
         myRigidBody = GetComponent<Rigidbody2D>();
+
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", -1);
+
         Application.targetFrameRate = 60;
     }
 
@@ -30,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");   
 
-        if(Input.GetButtonDown("Attack") && currentState != PlayerState.attack){
+        if(Input.GetButtonDown("Attack") && currentState != PlayerState.attack && interactiveInRange == false){
             Debug.Log("attacking");
             StartCoroutine(AttackCo());
         }else if(currentState == PlayerState.walk){
@@ -63,9 +68,21 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void MoveCharacter()
-    {
+    {        
         myRigidBody.MovePosition(
             transform.position + change.normalized * speed * Time.deltaTime
         );
+    }  
+
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.CompareTag("interactive")){            
+            interactiveInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other){
+        if(other.CompareTag("interactive")){            
+            interactiveInRange = false;            
+        }
     }
 }
