@@ -782,9 +782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f713890852c174a93bfb27e3e84aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 5
+  thrust: 8
   knockTime: 0.2
-  gotHit: 0
 --- !u!4 &577877581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5469591365626152220, guid: 73af7735dff119a49b8381aa68ff7571, type: 3}
@@ -10474,10 +10473,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 584fca48a46cd5e4e9f887e7edefbe56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   health: 2
   enemyName: Loggy
   baseAttack: 1
-  moveSpeed: 1
+  moveSpeed: 1.5
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
